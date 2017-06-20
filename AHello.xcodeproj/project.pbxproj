@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83F3C9C6D9AC6FE876025B91 /* libPods-AHello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BAEDFA258D655B6A7DB9CB /* libPods-AHello.a */; };
 		E45738081EC15D0C00FD6F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45738071EC15D0C00FD6F4C /* main.m */; };
 		E457380B1EC15D0C00FD6F4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E457380A1EC15D0C00FD6F4C /* AppDelegate.m */; };
 		E457380E1EC15D0C00FD6F4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E457380D1EC15D0C00FD6F4C /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E895D4B2A500676D1D2869E /* Pods-AHello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHello.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHello/Pods-AHello.debug.xcconfig"; sourceTree = "<group>"; };
+		95BAEDFA258D655B6A7DB9CB /* libPods-AHello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45738031EC15D0C00FD6F4C /* AHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45738071EC15D0C00FD6F4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E45738091EC15D0C00FD6F4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		E45738271EC15D0C00FD6F4C /* AHelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E457382B1EC15D0C00FD6F4C /* AHelloUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHelloUITests.m; sourceTree = "<group>"; };
 		E457382D1EC15D0C00FD6F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF9FAD5413F086B4C6F6CA69 /* Pods-AHello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHello.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHello/Pods-AHello.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3C9C6D9AC6FE876025B91 /* libPods-AHello.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6E534D3C4DEE7319391A33E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E895D4B2A500676D1D2869E /* Pods-AHello.debug.xcconfig */,
+				EF9FAD5413F086B4C6F6CA69 /* Pods-AHello.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFF7AD25D9EB55B775354BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BAEDFA258D655B6A7DB9CB /* libPods-AHello.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E45737FA1EC15D0C00FD6F4C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				E457381F1EC15D0C00FD6F4C /* AHelloTests */,
 				E457382A1EC15D0C00FD6F4C /* AHelloUITests */,
 				E45738041EC15D0C00FD6F4C /* Products */,
+				B6E534D3C4DEE7319391A33E /* Pods */,
+				CFF7AD25D9EB55B775354BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E45738301EC15D0C00FD6F4C /* Build configuration list for PBXNativeTarget "AHello" */;
 			buildPhases = (
+				A734E44D5BB93F89E8E39DDC /* [CP] Check Pods Manifest.lock */,
 				E45737FF1EC15D0C00FD6F4C /* Sources */,
 				E45738001EC15D0C00FD6F4C /* Frameworks */,
 				E45738011EC15D0C00FD6F4C /* Resources */,
+				012B3AEC401FC010BC2CDCD7 /* [CP] Embed Pods Frameworks */,
+				0D01AE1C2ED43D8D426E1DA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012B3AEC401FC010BC2CDCD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHello/Pods-AHello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D01AE1C2ED43D8D426E1DA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHello/Pods-AHello-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A734E44D5BB93F89E8E39DDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E45737FF1EC15D0C00FD6F4C /* Sources */ = {
@@ -424,6 +499,7 @@
 		};
 		E45738311EC15D0C00FD6F4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E895D4B2A500676D1D2869E /* Pods-AHello.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AHello/Info.plist;
@@ -435,6 +511,7 @@
 		};
 		E45738321EC15D0C00FD6F4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9FAD5413F086B4C6F6CA69 /* Pods-AHello.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AHello/Info.plist;
